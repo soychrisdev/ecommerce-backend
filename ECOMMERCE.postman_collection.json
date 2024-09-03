@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "e48a8e9d-aa32-4a4f-b64d-aab7b41abf3f",
+		"name": "ECOMMERCE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31039229"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "key_test_WwiW9RpRhOK7Jze0sol8pGekuCiT0UaSqpj9zZIQXDry909oaJBJitCUgHrdpudF",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"test2@icloud.com\",\n    \"password\": \"hola123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "key_test_WwiW9RpRhOK7Jze0sol8pGekuCiT0UaSqpj9zZIQXDry909oaJBJitCUgHrdpudF",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"christian\",\n    \"email\": \"tes2t@icloud.com\",\n    \"password\": \"hola123\",\n    \"passwordConfirmation\": \"hola123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ventipay",
+			"item": [
+				{
+					"name": "checkouts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZDUxNWU5ZDNlMTU2MTE1MTdiZjQwNCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzI1MjUxMDY3LCJleHAiOjE3MjUyNTE2Njd9.OSs2LjHPhyVsbecDi_WqjBn-E9CybFJ3Qw3Hehebdi4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"currency\": \"clp\",\n    \"authorize\": true,\n    \"cancel_url_method\": \"localhost\",\n    \"success_url_method\": \"localhost\",\n    \"items\": [{\"unit_price\": 100, \"quantity\": 1, \"name\": \"producto name test\", \"sku\": \"idproducto\"}]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/ventipay/checkouts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"ventipay",
+								"checkouts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZDUxNWU5ZDNlMTU2MTE1MTdiZjQwNCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzI1MjUxMDY3LCJleHAiOjE3MjUyNTE2Njd9.OSs2LjHPhyVsbecDi_WqjBn-E9CybFJ3Qw3Hehebdi4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"currency\": \"clp\",\n    \"authorize\": true,\n    \"cancel_url_method\": \"localhost\",\n    \"success_url_method\": \"localhost\",\n    \"items\": [{\"unit_price\": 100, \"quantity\": 1, \"name\": \"producto name test\", \"sku\": \"idproducto\"}]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/ventipay/checkouts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"ventipay",
+								"checkouts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkouts",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "key_test_WwiW9RpRhOK7Jze0sol8pGekuCiT0UaSqpj9zZIQXDry909oaJBJitCUgHrdpudF",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/ventipay/checkouts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"ventipay",
+								"checkouts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZDYxMjYwOTM0NGY0YWI0YzYyYzQ0OCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzI1MzMxMjU3LCJleHAiOjE3MjUzMzE4NTd9.cD9wqzlTaK8JvmCVL7ddpGDWHEODK8GeheC-9kg7ykU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/user/profile/66d612609344f4ab4c62c448",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"profile",
+								"66d612609344f4ab4c62c448"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkoutsById",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "key_test_WwiW9RpRhOK7Jze0sol8pGekuCiT0UaSqpj9zZIQXDry909oaJBJitCUgHrdpudF",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/ventipay/checkouts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"ventipay",
+								"checkouts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZDUxNWU5ZDNlMTU2MTE1MTdiZjQwNCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzI1MjUxMDY3LCJleHAiOjE3MjUyNTE2Njd9.OSs2LjHPhyVsbecDi_WqjBn-E9CybFJ3Qw3Hehebdi4",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "CHECKOUTS",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "key_test_WwiW9RpRhOK7Jze0sol8pGekuCiT0UaSqpj9zZIQXDry909oaJBJitCUgHrdpudF",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.ventipay.com/v1/checkouts",
+					"protocol": "https",
+					"host": [
+						"api",
+						"ventipay",
+						"com"
+					],
+					"path": [
+						"v1",
+						"checkouts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
