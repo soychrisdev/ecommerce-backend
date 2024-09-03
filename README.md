@@ -7,6 +7,7 @@
    ```
    use ventistore
    ```
+   Aqui utilizar contraseña previamente definida en nuestro archivo env o en nuestro config.
    ```
    db.createUser( { user: "ventistore", pwd: passwordPrompt(), roles: [{ role: "readWrite", db: "ventistore" }] } )
    ```
