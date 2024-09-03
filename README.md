@@ -1,3 +1,7 @@
+### Instroduccion:
+
+Este proyecto cuenta con autenticacion para registar y loguear los usuarios, una vez que estos esten logueados se puede comenzar a utilizar los endpoints correspondientes.
+
 ### Instrucciones
 
 1. Instalar dependencias
