@@ -20,7 +20,7 @@
 6. Utilizar el archivo postman para utilizar los endpoints por el lado del servidor.
 
 ### ¿Que falta?
-
+0. TEST TEST TEST UNITARIOS, INTEGRACION Y E2E. 
 1. Swagger
 2. Logger
 3. Redis cache control para los tokens
