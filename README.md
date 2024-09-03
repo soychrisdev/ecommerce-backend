@@ -15,3 +15,4 @@
    db.createUser( { user: "ventistore", pwd: passwordPrompt(), roles: [{ role: "readWrite", db: "ventistore" }] } )
    ```
 5. Ejecutar npm run dev o npm run devfix en caso de que existan conflictos con Node.
+6. Utilizar el archivo postman para utilizar los endpoints por el lado del servidor.
