@@ -7,7 +7,10 @@
    ```
    use ventistore
    ```
-   Aqui utilizar contraseña previamente definida en nuestro archivo env o en nuestro config.
+   Aqui utilizar contraseña previamente definida en nuestro archivo env o en nuestro config. RUTA: /SRC/CONFIG/INDEX.TS
+
+   ![image](https://github.com/user-attachments/assets/d14cc171-fad9-480f-9139-41ae91ceed88)
+
    ```
    db.createUser( { user: "ventistore", pwd: passwordPrompt(), roles: [{ role: "readWrite", db: "ventistore" }] } )
    ```
