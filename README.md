@@ -1,3 +1,5 @@
+### Instrucciones
+
 1. Instalar dependencias
 2. Levantar base de datos utilizando docker.
 3. Crear usuario base de datos segun las siguientes instrucciones:
@@ -16,3 +18,12 @@
    ```
 5. Ejecutar npm run dev o npm run devfix en caso de que existan conflictos con Node.
 6. Utilizar el archivo postman para utilizar los endpoints por el lado del servidor.
+
+### ¿Que falta?
+
+1. Swagger
+2. Logger
+3. Redis cache control para los tokens
+4. Checkouts y pagos
+5. Mejoras en terminos de patrones de diseño (SOLID)
+6. Manejar productos
