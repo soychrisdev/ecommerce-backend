@@ -1,5 +1,5 @@
 1. Instalar dependencias
-2. Levantar base de datos
+2. Levantar base de datos utilizando docker.
 3. Crear usuario base de datos segun las siguientes instrucciones:
    ```
    mongosh "mongodb://root:admin@localhost:27017/admin"
